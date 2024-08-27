@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root {
+  --primary-color: rgba(245,82,102);
+  --bg-primary-color: #feeef0;
+  --swiper-scrollbar-bg-color: hsla(0, 0%, 100%, 0.3);
+  --swiper-scrollbar-drag-bg-color: #fff;
+  --nav-text-color: hsla(0, 0%, 100%, 0.8);
+}
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  transition: 0.4s; /*For animation dark mode*/
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+i {
+  display: inline-flex;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  &:focus {
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.bg-dark {
+  background-color: rgba(34, 41, 52, 1);
+}
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+.bg-primary-subtle {
+  background-color: var(--bg-primary-color);
+}
+.text-primary{
+  color: var(--primary-color) !important;
+}

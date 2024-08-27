@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link
+    href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+     <!-- Shopping cart offcanvas -->
+     <div
+     class="offcanvas offcanvas-end pb-sm-2 px-sm-2"
+     id="shoppingCart"
+     tabindex="-1"
+     aria-labelledby="shoppingCartLabel"
+     style="width: 500px"
+     aria-modal="false"
+     role="dialog"
+   >
+     <!-- Header -->
+     <div class="offcanvas-header flex-column align-items-start py-3 pt-lg-4">
+       <div
+         class="d-flex align-items-center justify-content-between w-100 mb-3 mb-lg-4"
+       >
+         <h4 class="offcanvas-title" id="shoppingCartLabel">Shopping cart</h4>
+         <button
+           type="button"
+           class="btn-close"
+           data-bs-dismiss="offcanvas"
+           aria-label="Close"
+         ></button>
+       </div>
+     </div>
+
+     <!-- Items -->
+     <div class="offcanvas-body d-flex flex-column gap-4 pt-2">
+       <!-- Item -->
+       <div class="d-flex align-items-center">
+         <a class="flex-shrink-0" href="shop-product-general-electronics.html">
+           <img
+             src="./assets/images/products/product-1.png"
+             width="110"
+             alt="iPhone 14"
+           />
+         </a>
+         <div class="w-100 min-w-0 ps-2 ps-sm-3">
+           <h5 class="d-flex animate-underline mb-2">
+             <a
+               class="d-block fs-sm fw-medium text-truncate animate-target"
+               href="shop-product-general-electronics.html"
+               >Apple iPhone 14 128GB White</a
+             >
+           </h5>
+           <div class="h6 pb-1 mb-2">$899.00</div>
+           <div class="d-flex align-items-center justify-content-between">
+             <div class="count-input rounded-2">
+               <button
+                 type="button"
+                 class="btn btn-icon btn-sm"
+                 data-decrement=""
+                 aria-label="Decrement quantity"
+               >
+                 <i class="bi bi-dash"></i>
+               </button>
+               <input
+                 type="number"
+                 class="form-control form-control-sm"
+                 value="1"
+                 readonly=""
+               />
+               <button
+                 type="button"
+                 class="btn btn-icon btn-sm"
+                 data-increment=""
+                 aria-label="Increment quantity"
+               >
+                 <i class="bi bi-plus"></i>
+               </button>
+             </div>
+             <button
+               type="button"
+               class="btn-close fs-sm"
+               data-bs-toggle="tooltip"
+               data-bs-custom-class="tooltip-sm"
+               data-bs-title="Remove"
+               aria-label="Remove from cart"
+             ></button>
+           </div>
+         </div>
+       </div>
+
+       <!-- Item -->
+       <div class="d-flex align-items-center">
+         <a
+           class="position-relative flex-shrink-0"
+           href="shop-product-general-electronics.html"
+         >
+           <img
+             src="./assets/images/products/product-1.png"
+             width="110"
+             alt="iPad Pro"
+           />
+         </a>
+         <div class="w-100 min-w-0 ps-2 ps-sm-3">
+           <h5 class="d-flex animate-underline mb-2">
+             <a
+               class="d-block fs-sm fw-medium text-truncate animate-target"
+               href="shop-product-general-electronics.html"
+               >Tablet Apple iPad Pro M2</a
+             >
+           </h5>
+           <div class="h6 pb-1 mb-2">$989.00</div>
+           <div class="d-flex align-items-center justify-content-between">
+             <div class="count-input rounded-2">
+               <button
+                 type="button"
+                 class="btn btn-icon btn-sm"
+                 data-decrement=""
+                 aria-label="Decrement quantity"
+               >
+                 <i class="bi bi-dash"></i>
+               </button>
+               <input
+                 type="number"
+                 class="form-control form-control-sm"
+                 value="1"
+                 readonly=""
+               />
+               <button
+                 type="button"
+                 class="btn btn-icon btn-sm"
+                 data-increment=""
+                 aria-label="Increment quantity"
+               >
+                 <i class="bi bi-plus"></i>
+               </button>
+             </div>
+             <button
+               type="button"
+               class="btn-close fs-sm"
+               data-bs-toggle="tooltip"
+               data-bs-custom-class="tooltip-sm"
+               data-bs-title="Remove"
+               aria-label="Remove from cart"
+             ></button>
+           </div>
+         </div>
+       </div>
+
+       <!-- Item -->
+       <div class="d-flex align-items-center">
+         <a class="flex-shrink-0" href="shop-product-general-electronics.html">
+           <img
+             src="./assets/images/products/product-1.png"
+             width="110"
+             alt="Smart Watch"
+           />
+         </a>
+         <div class="w-100 min-w-0 ps-2 ps-sm-3">
+           <h5 class="d-flex animate-underline mb-2">
+             <a
+               class="d-block fs-sm fw-medium text-truncate animate-target"
+               href="shop-product-general-electronics.html"
+               >Smart Watch Series 7, White</a
+             >
+           </h5>
+           <div class="h6 pb-1 mb-2">$429.00</div>
+           <div class="d-flex align-items-center justify-content-between">
+             <div class="count-input rounded-2">
+               <button
+                 type="button"
+                 class="btn btn-icon btn-sm"
+                 data-decrement=""
+                 aria-label="Decrement quantity"
+               >
+                 <i class="bi bi-dash"></i>
+               </button>
+               <input
+                 type="number"
+                 class="form-control form-control-sm"
+                 value="1"
+                 readonly=""
+               />
+               <button
+                 type="button"
+                 class="btn btn-icon btn-sm"
+                 data-increment=""
+                 aria-label="Increment quantity"
+               >
+                 <i class="bi bi-plus"></i>
+               </button>
+             </div>
+             <button
+               type="button"
+               class="btn-close fs-sm"
+               data-bs-toggle="tooltip"
+               data-bs-custom-class="tooltip-sm"
+               data-bs-title="Remove"
+               aria-label="Remove from cart"
+             ></button>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- Footer -->
+     <div class="offcanvas-header flex-column align-items-start">
+       <div
+         class="d-flex align-items-center justify-content-between w-100 mb-3 mb-md-4"
+       >
+         <span class="text-light-emphasis">Subtotal:</span>
+         <span class="h6 mb-0">$2,317.00</span>
+       </div>
+       <div class="d-flex w-100 gap-3">
+         <a class="btn btn-lg btn-secondary w-100" href="cart-detail.html"
+           >View cart</a
+         >
+         <a
+           class="btn btn-lg btn-primary w-100"
+           href="checkout.html"
+           >Checkout</a
+         >
+       </div>
+     </div>
+   </div>
+   <!-- Navigation bar (Page header) -->
+   <header
+   class="navbar navbar-expand-lg navbar-dark bg-dark d-block z-fixed z-3 p-0 header-top user-select-none"
+ >
+   <div class="container d-block py-1 py-lg-3 bg-dark">
+     <div class="navbar-stuck-hide pt-1"></div>
+     <div class="row flex-wrap align-items-center g-0">
+       <div class="col col-lg-3 d-flex align-items-center">
+         <button
+           type="button"
+           class="navbar-toggler me-2 me-lg-0"
+           data-bs-toggle="offcanvas"
+           data-bs-target="#navbarNav"
+           aria-controls="navbarNav"
+           aria-label="Toggle navigation"
+         >
+           <i class="bi bi-list"></i>
+         </button>
+         <a href="index.html" class="navbar-brand me-0"> Cartzilla </a>
+       </div>
+       <div
+         class="col col-lg-9 d-flex align-items-center justify-content-end"
+       >
+         <!-- Search visible on screens > 991px wide (lg breakpoint) -->
+         <div
+           class="position-relative flex-fill d-none d-lg-block pe-4 pe-xl-5"
+         >
+           <i
+             class="bi bi-search position-absolute top-50 translate-middle-y d-flex fs-lg text-white ms-3"
+           ></i>
+           <input
+             type="search"
+             class="form-control form-control-lg form-icon-start border-white rounded-pill"
+             placeholder="Search the products"
+           />
+         </div>
+         <div class="d-flex align-items-center">
+           <!-- Navbar stuck nav toggler -->
+           <button
+             type="button"
+             class="navbar-toggler d-none navbar-stuck-show me-3"
+             data-bs-toggle="collapse"
+             data-bs-target="#stuckNav"
+             aria-controls="stuckNav"
+             aria-expanded="false"
+             aria-label="Toggle navigation in navbar stuck state"
+           >
+             <span class="navbar-toggler-icon"></span>
+           </button>
+
+           <!-- Search toggle button visible on screens < 992px wide (lg breakpoint) -->
+           <button
+             type="button"
+             class="btn btn-icon btn-lg fs-xl btn-outline-secondary border-0 rounded-circle animate-shake d-lg-none p-3"
+             data-bs-toggle="collapse"
+             data-bs-target="#searchBar"
+             aria-expanded="false"
+             aria-controls="searchBar"
+             aria-label="Toggle search bar"
+           >
+             <i class="bi bi-search"></i>
+           </button>
+
+           <!-- Account button visible on screens > 768px wide (md breakpoint) -->
+           <a
+             class="btn btn-icon btn-lg fs-lg btn-outline-secondary border-0 rounded-circle animate-shake d-none d-md-inline-flex"
+             href="account-signin.html"
+           >
+             <i class="bi bi-person"></i>
+             <span class="visually-hidden">Account</span>
+           </a>
+
+           <!-- Cart button -->
+           <button
+             type="button"
+             class="btn btn-icon btn-lg btn-secondary position-relative rounded-circle ms-2 p-3"
+             data-bs-toggle="offcanvas"
+             data-bs-target="#shoppingCart"
+             aria-controls="shoppingCart"
+             aria-label="Shopping cart"
+           >
+             <span
+               class="position-absolute top-0 ms-2 badge text-bg-success border border-3 border-dark rounded-pill px-2 py-1"
+               style="font-size: 0.7rem"
+               >3</span
+             >
+             <span
+               class="top-0 start-0 d-flex align-items-center justify-content-center w-100 h-100 rounded-circle animate-slide-end fs-lg"
+             >
+               <i class="bi bi-cart2"></i>
+             </span>
+           </button>
+         </div>
+       </div>
+     </div>
+     <div class="navbar-stuck-hide pb-1"></div>
+   </div>
+   <div
+     class="position-absolute top-100 z-2 w-100 bg-dark d-lg-none collapse"
+     id="searchBar"
+   >
+     <div class="container position-relative my-3">
+       <i
+         class="bi bi-search position-absolute top-50 translate-middle-y d-flex fs-lg text-white ms-3"
+       ></i>
+       <input
+         type="search"
+         class="form-control form-icon-start border-white rounded-pill"
+         placeholder="Search the products"
+         data-autofocus="collapse"
+       />
+     </div>
+   </div>
+   <div class="collapse navbar-stuck-hide" id="stuckNav">
+     <nav
+       class="offcanvas offcanvas-start"
+       id="navbarNav"
+       tabindex="-1"
+       aria-labelledby="navbarNavLabel"
+       style="width: 350px"
+     >
+       <div class="offcanvas-header py-3">
+         <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+         <button
+           type="button"
+           class="btn-close"
+           data-bs-dismiss="offcanvas"
+           aria-label="Close"
+         ></button>
+       </div>
+       <div class="offcanvas-body py-3 py-lg-0">
+         <div class="container px-0 px-lg-3">
+           <div class="row">
+             <!-- Categories mega menu -->
+             <div class="col-lg-3">
+               <div class="navbar-nav">
+                 <div class="dropdown w-100">
+                   <!-- Buttton visible on screens > 991px wide (lg breakpoint) -->
+                   <div
+                     class="cursor-pointer d-none d-lg-block show"
+                     data-bs-toggle="dropdown"
+                     data-bs-trigger="hover"
+                     aria-expanded="true"
+                   >
+                     <button
+                       type="button"
+                       class="btn btn-lg btn-secondary dropdown-toggle w-100 rounded-bottom-0 justify-content-start pe-none"
+                     >
+                       <i class="bi bi-grid"></i>
+                       <span class="ms-2 me-auto">Danh mục sản phẩm</span>
+                     </button>
+                   </div>
+
+                   <!-- Buttton visible on screens < 992px wide (lg breakpoint) -->
+                   <button
+                     type="button"
+                     class="btn btn-lg btn-secondary dropdown-toggle w-100 justify-content-start d-lg-none mb-2"
+                     data-bs-toggle="dropdown"
+                     data-bs-auto-close="outside"
+                   >
+                     <i class="bi bi-grid"></i>
+                     <span class="ms-2 me-auto">Danh mục sản phẩm</span>
+                   </button>
+
+                   <!-- Mega menu -->
+                   <ul
+                     class="dropdown-menu dropdown-menu-static w-100 rounded-top-0 rounded-bottom-4 py-1 p-lg-1"
+                   >
+                     <li class="d-lg-none pt-2">
+                       <a
+                         class="dropdown-item fw-medium"
+                         href="shop-categories-electronics.html"
+                       >
+                         All Categories
+                       </a>
+                     </li>
+                     <li class="dropend position-static">
+                       <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
+                         <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex" href="shop-catalog-electronics.html">
+                           <span class="text-truncate">Computers &amp; Accessories</span>
+                         </a>
+                         <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
+                           Computers &amp; Accessories
+                         </div>
+                       </div>
+                     </li>
+                     <li class="dropend position-static">
+                       <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
+                         <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex" href="shop-catalog-electronics.html">
+                           <span class="text-truncate">Computers &amp; Accessories</span>
+                         </a>
+                         <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
+                           Computers &amp; Accessories
+                         </div>
+                       </div>
+                     </li>
+                     <li class="dropend position-static">
+                       <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
+                         <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex" href="shop-catalog-electronics.html">
+                           <span class="text-truncate">Computers &amp; Accessories</span>
+                         </a>
+                         <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
+                           Computers &amp; Accessories
+                         </div>
+                       </div>
+                     </li>
+                   </ul>
+                 </div>
+               </div>
+             </div>
+
+             <!-- Navbar nav -->
+             <div class="col-lg-9 d-lg-flex pt-3 pt-lg-0 ps-lg-0">
+               <ul class="navbar-nav position-relative">
+                 <li class="nav-item dropdown me-lg-n1 me-xl-0">
+                   <a class="nav-link active" href="#">Trang chủ</a>
+                 </li>
+                 <li
+                   class="nav-item dropdown position-static me-lg-n1 me-xl-0"
+                 >
+                   <a class="nav-link" href="shop.html">Cửa hàng</a>
+                 </li>
+                 <li class="nav-item dropdown me-lg-n1 me-xl-0">
+                   <a class="nav-link" href="contact.html">Liên hệ</a>
+                 </li>
+                 <li class="nav-item dropdown me-lg-n1 me-xl-0">
+                   <a class="nav-link" href="about.html">Về chúng tôi</a>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="offcanvas-header border-top px-0 py-3 mt-3 d-md-none">
+         <div class="nav nav-justified w-100">
+           <a class="nav-link border-end" href="account-signin.html">
+             <i class="bi bi-person"></i>
+             Đăng nhập
+           </a>
+           <a class="nav-link" href="account-wishlist.html">
+             <i class="bi bi-person-add"></i>
+             Đăng kí
+           </a>
+         </div>
+       </div>
+     </nav>
+   </div>
+ </header>
+ <main class="content-wrapper">
+    <div class="container py-5 mt-n2 mt-sm-0">
+        <div class="row pt-md-2 pt-lg-3 pb-sm-2 pb-md-3 pb-lg-4 pb-xl-5">
+              <!-- Sidebar navigation that turns into offcanvas on screens < 992px wide (lg breakpoint) -->
+          <aside class="col-lg-3">
+            <div class="offcanvas-lg offcanvas-start pe-lg-0 pe-xl-4" id="accountSidebar">
+
+              <!-- Header -->
+              <div class="offcanvas-header d-lg-block py-3 p-lg-0">
+                <div class="d-flex align-items-center">
+                  <div class="h5 d-flex justify-content-center align-items-center flex-shrink-0 text-primary bg-primary-subtle lh-1 rounded-circle mb-0" style="width: 3rem; height: 3rem">S</div>
+                  <div class="min-w-0 ps-3">
+                    <h5 class="h6 mb-1">Susan Gardner</h5>
+
+                  </div>
+                </div>
+                <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#accountSidebar" aria-label="Close"></button>
+              </div>
+
+              <!-- Body (Navigation) -->
+              <div class="offcanvas-body d-block pt-2 pt-lg-4 pb-lg-0">
+                <nav class="list-group list-group-borderless">
+                  <a class="list-group-item list-group-item-action d-flex align-items-center pe-none" href="account-orders.html">
+                    <i class="ci-shopping-bag fs-base opacity-75 me-2"></i>
+                    Orders
+                    <span class="badge bg-primary rounded-pill ms-auto">1</span>
+                  </a>
+                </nav>
+                <h6 class="pt-4 ps-2 ms-1">Manage account</h6>
+                <nav class="list-group list-group-borderless">
+                  <a class="list-group-item list-group-item-action d-flex align-items-center active" href="account-info.html">
+                    <i class="ci-user fs-base opacity-75 me-2"></i>
+                    Personal info
+                  </a>
+                </nav>
+                <nav class="list-group list-group-borderless pt-3">
+                  <a class="list-group-item list-group-item-action d-flex align-items-center" href="account-signin.html">
+                    <i class="ci-log-out fs-base opacity-75 me-2"></i>
+                    Log out
+                  </a>
+                </nav>
+              </div>
+            </div>
+          </aside>
+          <!-- Personal info content -->
+          <div class="col-lg-9">
+            <div class="ps-lg-3 ps-xl-0">
+
+              <!-- Page title -->
+              <h1 class="h2 mb-1 mb-sm-2">Personal info</h1>
+
+              <!-- Basic info -->
+              <div class="border-bottom py-4">
+                <div class="nav flex-nowrap align-items-center justify-content-between pb-1 mb-3">
+                  <h2 class="h6 mb-0">Basic info</h2>
+                  <a class="nav-link hiding-collapse-toggle text-decoration-underline p-0 collapsed" href=".basic-info" data-bs-toggle="collapse" aria-expanded="false" aria-controls="basicInfoPreview basicInfoEdit">Edit</a>
+                </div>
+                <div class="collapse basic-info show" id="basicInfoPreview">
+                  <ul class="list-unstyled fs-sm m-0">
+                    <li>Susan Gardner</li>
+                    <li>May 12, 1996</li>
+                    <li>English</li>
+                  </ul>
+                </div>
+                <div class="collapse basic-info" id="basicInfoEdit">
+                  <form class="row g-3 g-sm-4 needs-validation" novalidate="">
+                    <div class="col-sm-6">
+                      <label for="fn" class="form-label">First name</label>
+                      <div class="position-relative">
+                        <input type="text" class="form-control" id="fn" value="Susan" required="">
+                        <div class="invalid-feedback">Please enter your first name!</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="ln" class="form-label">Last name</label>
+                      <div class="position-relative">
+                        <input type="text" class="form-control" id="ln" value="Gardner" required="">
+                        <div class="invalid-feedback">Please enter your last name!</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="birthdate" class="form-label">Date of birth</label>
+                      <div class="position-relative">
+                        <input type="text" class="form-control form-icon-end flatpickr-input" id="birthdate" data-datepicker="{
+                          &quot;dateFormat&quot;: &quot;F j, Y&quot;,
+                          &quot;defaultDate&quot;: &quot;May 15, 1996&quot;
+                        }" placeholder="Choose date" readonly="readonly">
+                        <i class="ci-calendar position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label">Language</label>
+                      <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true" aria-expanded="false"><div class="form-select"><select class="form-select choices__input" data-select="{
+                        &quot;placeholderValue&quot;: &quot;Select language&quot;,
+                        &quot;choices&quot;: [
+                          {
+                            &quot;value&quot;: &quot;&quot;,
+                            &quot;label&quot;: &quot;Select language&quot;,
+                            &quot;placeholder&quot;: true
+                          },
+                          {
+                            &quot;value&quot;: &quot;English&quot;,
+                            &quot;label&quot;: &quot;<div class=\&quot;d-flex align-items-center\&quot;><img src=\&quot;assets/img/flags/en-us.png\&quot; class=\&quot;flex-shrink-0 me-2\&quot; width=\&quot;20\&quot; alt=\&quot;English\&quot;> English</div>&quot;,
+                            &quot;selected&quot;: true
+                          },
+                          {
+                            &quot;value&quot;: &quot;Français&quot;,
+                            &quot;label&quot;: &quot;<div class=\&quot;d-flex align-items-center\&quot;><img src=\&quot;assets/img/flags/fr.png\&quot; class=\&quot;flex-shrink-0 me-2\&quot; width=\&quot;20\&quot; alt=\&quot;Français\&quot;> Français</div>&quot;
+                          },
+                          {
+                            &quot;value&quot;: &quot;Deutsch&quot;,
+                            &quot;label&quot;: &quot;<div class=\&quot;d-flex align-items-center\&quot;><img src=\&quot;assets/img/flags/de.png\&quot; class=\&quot;flex-shrink-0 me-2\&quot; width=\&quot;20\&quot; alt=\&quot;Deutsch\&quot;> Deutsch</div>&quot;
+                          },
+                          {
+                            &quot;value&quot;: &quot;Italiano&quot;,
+                            &quot;label&quot;: &quot;<div class=\&quot;d-flex align-items-center\&quot;><img src=\&quot;assets/img/flags/it.png\&quot; class=\&quot;flex-shrink-0 me-2\&quot; width=\&quot;20\&quot; alt=\&quot;Italiano\&quot;> Italiano</div>&quot;
+                          }
+                        ]
+                      }" data-select-template="true" hidden="" tabindex="-1" data-choice="active"><option value="English" data-custom-properties="[object Object]">&lt;div class="d-flex align-items-center"&gt;&lt;img src="assets/img/flags/en-us.png" class="flex-shrink-0 me-2" width="20" alt="English"&gt; English&lt;/div&gt;</option></select><div class="choices__list choices__list--single"><div class="choices__item choices__item--selectable " data-item="" data-id="1" data-value="English" aria-selected="true">
+                    <div class="d-flex align-items-center"><img src="assets/img/flags/en-us.png" class="flex-shrink-0 me-2" width="20" alt="English"> English</div>
+                  <button type="button" class="choices__button" aria-label="Remove item" data-button=""></button>
+                </div></div></div><div class="choices__list choices__list--dropdown" aria-expanded="false"><div class="choices__list" role="listbox"><div class="choices__item choices__item--choice choices__item--selectable choices__placeholder is-highlighted" data-select-text="" data-choice="" data-choice-selectable="" data-id="1" data-value="" role="option" aria-selected="true">
+                  <div>
+                    Select language
+                    
+                  </div>
+                </div><div class="choices__item choices__item--choice choices__item--selectable " data-select-text="" data-choice="" data-choice-selectable="" data-id="2" data-value="English" role="option">
+                  <div>
+                    <div class="d-flex align-items-center"><img src="assets/img/flags/en-us.png" class="flex-shrink-0 me-2" width="20" alt="English"> English</div>
+                    
+                  </div>
+                </div><div class="choices__item choices__item--choice choices__item--selectable " data-select-text="" data-choice="" data-choice-selectable="" data-id="3" data-value="Français" role="option">
+                  <div>
+                    <div class="d-flex align-items-center"><img src="assets/img/flags/fr.png" class="flex-shrink-0 me-2" width="20" alt="Français"> Français</div>
+                    
+                  </div>
+                </div><div class="choices__item choices__item--choice choices__item--selectable " data-select-text="" data-choice="" data-choice-selectable="" data-id="4" data-value="Deutsch" role="option">
+                  <div>
+                    <div class="d-flex align-items-center"><img src="assets/img/flags/de.png" class="flex-shrink-0 me-2" width="20" alt="Deutsch"> Deutsch</div>
+                    
+                  </div>
+                </div><div class="choices__item choices__item--choice choices__item--selectable " data-select-text="" data-choice="" data-choice-selectable="" data-id="5" data-value="Italiano" role="option">
+                  <div>
+                    <div class="d-flex align-items-center"><img src="assets/img/flags/it.png" class="flex-shrink-0 me-2" width="20" alt="Italiano"> Italiano</div>
+                    
+                  </div>
+                </div></div></div></div>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-flex gap-3 pt-2 pt-sm-0">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target=".basic-info" aria-expanded="true" aria-controls="basicInfoPreview basicInfoEdit">Close</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Contact -->
+              <div class="border-bottom py-4">
+                <div class="nav flex-nowrap align-items-center justify-content-between pb-1 mb-3">
+                  <div class="d-flex align-items-center gap-3 me-4">
+                    <h2 class="h6 mb-0">Contact</h2>
+                  </div>
+                  <a class="nav-link hiding-collapse-toggle text-decoration-underline p-0 collapsed" href=".contact-info" data-bs-toggle="collapse" aria-expanded="false" aria-controls="contactInfoPreview contactInfoEdit">Edit</a>
+                </div>
+                <div class="collapse contact-info show" id="contactInfoPreview">
+                  <ul class="list-unstyled fs-sm m-0">
+                    <li class="mb-1">susan.gardner@email.com</li>
+                    <li>+1 (805) 348 95 72 <span class="text-success ms-1">Verified</span></li>
+                  </ul>
+                </div>
+                <div class="collapse contact-info" id="contactInfoEdit">
+                  <form class="row g-3 g-sm-4 needs-validation" novalidate="">
+                    <div class="col-sm-6">
+                      <label for="email" class="form-label">Email address</label>
+                      <div class="position-relative">
+                        <input type="email" class="form-control" id="email" value="susan.gardner@email.com" required="">
+                        <div class="invalid-feedback">Please enter a valid email address!</div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="phone" class="form-label">Phone number</label>
+                      <div class="position-relative">
+                        <input type="text" class="form-control" id="phone" data-input-format="{&quot;numericOnly&quot;: true, &quot;delimiters&quot;: [&quot;+1 (&quot;, &quot;)&quot;, &quot; &quot;], &quot;blocks&quot;: [0, 3, 0, 3, 2, 2]}" placeholder="+1 (___) ___ __ __" value="+1 (805) 348 95 72" required="">
+                        <div class="invalid-feedback">Please enter your phone number!</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-flex gap-3 pt-2 pt-sm-0">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target=".contact-info" aria-expanded="true" aria-controls="contactInfoPreview contactInfoEdit">Close</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Password -->
+              <div class="border-bottom py-4">
+                <div class="nav flex-nowrap align-items-center justify-content-between pb-1 mb-3">
+                  <div class="d-flex align-items-center gap-3 me-4">
+                    <h2 class="h6 mb-0">Password</h2>
+                  </div>
+                  <a class="nav-link hiding-collapse-toggle text-decoration-underline p-0 collapsed" href=".password-change" data-bs-toggle="collapse" aria-expanded="false" aria-controls="passChangePreview passChangeEdit">Edit</a>
+                </div>
+                <div class="collapse password-change show" id="passChangePreview">
+                  <ul class="list-unstyled fs-sm m-0">
+                    <li>**************</li>
+                  </ul>
+                </div>
+                <div class="collapse password-change" id="passChangeEdit">
+                  <form class="row g-3 g-sm-4 needs-validation" novalidate="">
+                    <div class="col-sm-6">
+                      <label for="current-password" class="form-label">Current password</label>
+                      <div class="password-toggle">
+                        <input type="password" class="form-control" id="current-password" placeholder="Enter your current password" required="">
+                        <label class="password-toggle-button" aria-label="Show/hide password">
+                          <input type="checkbox" class="btn-check">
+                        <span class="password-toggle-button-icon d-flex">
+      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M23.8 11.6c-.1-.1-.1-.3-.2-.4-.8-1.4-1.7-2.7-2.8-3.8-1.9-2.1-4.9-4.3-8.8-4.3S5.2 5.3 3.2 7.4c-1.1 1.2-2 2.4-2.8 3.8-.1.1-.1.2-.2.4s-.1.5 0 .8v.1c.2.4.5.8.7 1.2.7 1 1.4 2 2.2 2.9 1.9 2.1 4.9 4.3 8.8 4.3 3.9 0 6.8-2.2 8.8-4.3 1.1-1.2 2-2.4 2.8-3.8.1-.1.1-.2.2-.4.2-.3.2-.6.1-.8zm-4.3 3.8c-1.8 1.9-4.3 3.7-7.5 3.7s-5.7-1.8-7.5-3.7c-1-1-1.8-2.2-2.5-3.4.7-1.2 1.5-2.4 2.5-3.4C6.3 6.7 8.8 4.9 12 4.9s5.7 1.8 7.5 3.7c1 1 1.8 2.2 2.5 3.4-.7 1.2-1.5 2.4-2.5 3.4z"></path><path d="M12 8.1c-2.2 0-3.9 1.8-3.9 3.9s1.7 3.9 3.9 3.9 3.9-1.7 3.9-3.9-1.7-3.9-3.9-3.9zm0 6c-1.1 0-2.1-1-2.1-2.1s.9-2.1 2.1-2.1 2.1 1 2.1 2.1-1 2.1-2.1 2.1z"></path>
+      </svg>
+    </span></label>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="new-password" class="form-label">New password</label>
+                      <div class="password-toggle">
+                        <input type="password" class="form-control" id="new-password" placeholder="Create new password" required="">
+                        <label class="password-toggle-button" aria-label="Show/hide password">
+                          <input type="checkbox" class="btn-check">
+                        <span class="password-toggle-button-icon d-flex">
+      <svg width="1em" height="1em" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M23.8 11.6c-.1-.1-.1-.3-.2-.4-.8-1.4-1.7-2.7-2.8-3.8-1.9-2.1-4.9-4.3-8.8-4.3S5.2 5.3 3.2 7.4c-1.1 1.2-2 2.4-2.8 3.8-.1.1-.1.2-.2.4s-.1.5 0 .8v.1c.2.4.5.8.7 1.2.7 1 1.4 2 2.2 2.9 1.9 2.1 4.9 4.3 8.8 4.3 3.9 0 6.8-2.2 8.8-4.3 1.1-1.2 2-2.4 2.8-3.8.1-.1.1-.2.2-.4.2-.3.2-.6.1-.8zm-4.3 3.8c-1.8 1.9-4.3 3.7-7.5 3.7s-5.7-1.8-7.5-3.7c-1-1-1.8-2.2-2.5-3.4.7-1.2 1.5-2.4 2.5-3.4C6.3 6.7 8.8 4.9 12 4.9s5.7 1.8 7.5 3.7c1 1 1.8 2.2 2.5 3.4-.7 1.2-1.5 2.4-2.5 3.4z"></path><path d="M12 8.1c-2.2 0-3.9 1.8-3.9 3.9s1.7 3.9 3.9 3.9 3.9-1.7 3.9-3.9-1.7-3.9-3.9-3.9zm0 6c-1.1 0-2.1-1-2.1-2.1s.9-2.1 2.1-2.1 2.1 1 2.1 2.1-1 2.1-2.1 2.1z"></path>
+      </svg>
+    </span></label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-flex gap-3 pt-2 pt-sm-0">
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target=".password-change" aria-expanded="true" aria-controls="passChangePreview passChangeEdit">Close</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Delete account -->
+              <div class="pt-3 mt-2 mt-sm-3">
+                <h2 class="h6">Delete account</h2>
+                <p class="fs-sm">When you delete your account, your public profile will be deactivated immediately. If you change your mind before the 14 days are up, sign in with your email and password, and we'll send you a link to reactivate your account.</p>
+                <a class="text-danger fs-sm fw-medium" href="#!">Delete account</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+ </main>
+ <footer class="footer bg-dark text-light">
+    <div class="footer-top">
+      <div class="container pt-5 mt-1 mt-sm-3 mt-lg-4">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+            <div class="footer-single-widget">
+              <div class="widget-title">
+                <div class="footer-logo">
+                  <a class="text-light" href="#"> LOGO </a>
+                </div>
+              </div>
+              <div class="widget-body">Thương hiệu là ....</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <div class="footer-single-widget">
+              <div class="widget-title">Thông tin</div>
+              <div class="widget-body">
+                <div class="footer-useful-link">
+                  <ul class="contact-list">
+                    <li class="contact-item">
+                      Địa chỉ: 180 Cao Lỗ, Phường 4, Quận 8, TP Hồ Chí Minh
+                    </li>
+                    <li class="contact-item">
+                      Email: DH52102716@student.stu.edu.vn
+                    </li>
+                    <li class="contact-item">Điện thoại: (028) 38 505 520</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.4985499755685!2d106.6789931371774!3d10.74041089759156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1714125058390!5m2!1svi!2s"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container pt-5 mt-1 mt-sm-3 mt-lg-4">
+        <div class="row">
+          <div class="col-12">
+            <hr />
+            <div class="footer-copyright text-center">@Copyright</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="back-to-top"><i class="bi bi-arrow-up"></i></div>
+  </footer>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+  integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+  crossorigin="anonymous"
+></script>
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

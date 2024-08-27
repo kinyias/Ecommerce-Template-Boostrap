@@ -1,0 +1,45 @@
+/*=============== BREAKPOINTS ===============*/
+@media screen and (min-width: 991px) {
+  .navbar-nav {
+    a {
+      display: inline-block;
+      color: var(--nav-text-color);
+      font-size: 1.2rem;
+      &:hover {
+        color: #fff;
+      }
+    }
+    .dropdown {
+      cursor: pointer;
+      &-toggle {
+        cursor: pointer;
+        color: var(--nav-text-color);
+      }
+      &-item {
+        color: #000;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+    .nav-link::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #fff;
+      transition: width 0.3s;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .nav-link.active {
+      border-left: none;
+      color: #fff !important;
+    }
+    .nav-link.active::after {
+      width: 100%;
+    }
+  }
+}

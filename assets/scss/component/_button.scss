@@ -1,0 +1,129 @@
+.btn{
+    display: inline-flex;
+    align-items: center;
+}
+.btn-secondary{
+    background-color: #333d4c;
+    border: none;
+}
+
+.navbar-nav{
+    .btn-secondary{
+        background-color: #eef1f6;
+        color: #000;
+        &:focus{
+            color: #000;
+            background-color: #eef1f6;
+        }
+    }
+}
+.back-to-top {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #888;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 100%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.animate-shake{
+    &:hover{
+        color:#fff;
+        background-color: transparent;
+        -webkit-animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                animation: shake-lr 0.7s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    }
+}
+ @-webkit-keyframes shake-lr {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    10% {
+      -webkit-transform: rotate(8deg);
+              transform: rotate(8deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-10deg);
+              transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+    }
+    80% {
+      -webkit-transform: rotate(-8deg);
+              transform: rotate(-8deg);
+    }
+    90% {
+      -webkit-transform: rotate(8deg);
+              transform: rotate(8deg);
+    }
+  }
+  @keyframes shake-lr {
+    0%,
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+    }
+    10% {
+      -webkit-transform: rotate(8deg);
+              transform: rotate(8deg);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: rotate(-10deg);
+              transform: rotate(-10deg);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: rotate(10deg);
+              transform: rotate(10deg);
+    }
+    80% {
+      -webkit-transform: rotate(-8deg);
+              transform: rotate(-8deg);
+    }
+    90% {
+      -webkit-transform: rotate(8deg);
+              transform: rotate(8deg);
+    }
+  }
+  
+@media (min-width: 991px) {
+    .navbar-nav{
+        .btn-secondary{
+            background-color: #333d4c;
+        }
+    }
+}

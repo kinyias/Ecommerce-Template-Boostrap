@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <link
+    href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+    <!-- Shopping cart offcanvas -->
+    <div
+      class="offcanvas offcanvas-end pb-sm-2 px-sm-2"
+      id="shoppingCart"
+      tabindex="-1"
+      aria-labelledby="shoppingCartLabel"
+      style="width: 500px"
+      aria-modal="false"
+      role="dialog"
+    >
+      <!-- Header -->
+      <div class="offcanvas-header flex-column align-items-start py-3 pt-lg-4">
+        <div
+          class="d-flex align-items-center justify-content-between w-100 mb-3 mb-lg-4"
+        >
+          <h4 class="offcanvas-title" id="shoppingCartLabel">Shopping cart</h4>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+
+      <!-- Items -->
+      <div class="offcanvas-body d-flex flex-column gap-4 pt-2">
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="flex-shrink-0" href="shop-product-general-electronics.html">
+            <img
+              src="./assets/images/products/product-1.png"
+              width="110"
+              alt="iPhone 14"
+            />
+          </a>
+          <div class="w-100 min-w-0 ps-2 ps-sm-3">
+            <h5 class="d-flex animate-underline mb-2">
+              <a
+                class="d-block fs-sm fw-medium text-truncate animate-target"
+                href="shop-product-general-electronics.html"
+                >Apple iPhone 14 128GB White</a
+              >
+            </h5>
+            <div class="h6 pb-1 mb-2">$899.00</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-2">
+                <button
+                  type="button"
+                  class="btn btn-icon btn-sm"
+                  data-decrement=""
+                  aria-label="Decrement quantity"
+                >
+                  <i class="bi bi-dash"></i>
+                </button>
+                <input
+                  type="number"
+                  class="form-control form-control-sm"
+                  value="1"
+                  readonly=""
+                />
+                <button
+                  type="button"
+                  class="btn btn-icon btn-sm"
+                  data-increment=""
+                  aria-label="Increment quantity"
+                >
+                  <i class="bi bi-plus"></i>
+                </button>
+              </div>
+              <button
+                type="button"
+                class="btn-close fs-sm"
+                data-bs-toggle="tooltip"
+                data-bs-custom-class="tooltip-sm"
+                data-bs-title="Remove"
+                aria-label="Remove from cart"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a
+            class="position-relative flex-shrink-0"
+            href="shop-product-general-electronics.html"
+          >
+            <img
+              src="./assets/images/products/product-1.png"
+              width="110"
+              alt="iPad Pro"
+            />
+          </a>
+          <div class="w-100 min-w-0 ps-2 ps-sm-3">
+            <h5 class="d-flex animate-underline mb-2">
+              <a
+                class="d-block fs-sm fw-medium text-truncate animate-target"
+                href="shop-product-general-electronics.html"
+                >Tablet Apple iPad Pro M2</a
+              >
+            </h5>
+            <div class="h6 pb-1 mb-2">$989.00</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-2">
+                <button
+                  type="button"
+                  class="btn btn-icon btn-sm"
+                  data-decrement=""
+                  aria-label="Decrement quantity"
+                >
+                  <i class="bi bi-dash"></i>
+                </button>
+                <input
+                  type="number"
+                  class="form-control form-control-sm"
+                  value="1"
+                  readonly=""
+                />
+                <button
+                  type="button"
+                  class="btn btn-icon btn-sm"
+                  data-increment=""
+                  aria-label="Increment quantity"
+                >
+                  <i class="bi bi-plus"></i>
+                </button>
+              </div>
+              <button
+                type="button"
+                class="btn-close fs-sm"
+                data-bs-toggle="tooltip"
+                data-bs-custom-class="tooltip-sm"
+                data-bs-title="Remove"
+                aria-label="Remove from cart"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="d-flex align-items-center">
+          <a class="flex-shrink-0" href="shop-product-general-electronics.html">
+            <img
+              src="./assets/images/products/product-1.png"
+              width="110"
+              alt="Smart Watch"
+            />
+          </a>
+          <div class="w-100 min-w-0 ps-2 ps-sm-3">
+            <h5 class="d-flex animate-underline mb-2">
+              <a
+                class="d-block fs-sm fw-medium text-truncate animate-target"
+                href="shop-product-general-electronics.html"
+                >Smart Watch Series 7, White</a
+              >
+            </h5>
+            <div class="h6 pb-1 mb-2">$429.00</div>
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="count-input rounded-2">
+                <button
+                  type="button"
+                  class="btn btn-icon btn-sm"
+                  data-decrement=""
+                  aria-label="Decrement quantity"
+                >
+                  <i class="bi bi-dash"></i>
+                </button>
+                <input
+                  type="number"
+                  class="form-control form-control-sm"
+                  value="1"
+                  readonly=""
+                />
+                <button
+                  type="button"
+                  class="btn btn-icon btn-sm"
+                  data-increment=""
+                  aria-label="Increment quantity"
+                >
+                  <i class="bi bi-plus"></i>
+                </button>
+              </div>
+              <button
+                type="button"
+                class="btn-close fs-sm"
+                data-bs-toggle="tooltip"
+                data-bs-custom-class="tooltip-sm"
+                data-bs-title="Remove"
+                aria-label="Remove from cart"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="offcanvas-header flex-column align-items-start">
+        <div
+          class="d-flex align-items-center justify-content-between w-100 mb-3 mb-md-4"
+        >
+          <span class="text-light-emphasis">Subtotal:</span>
+          <span class="h6 mb-0">$2,317.00</span>
+        </div>
+        <div class="d-flex w-100 gap-3">
+          <a class="btn btn-lg btn-secondary w-100" href="cart-detail.html"
+            >View cart</a
+          >
+          <a
+            class="btn btn-lg btn-primary w-100"
+            href="checkout-v1-delivery-1.html"
+            >Checkout</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- Navigation bar (Page header) -->
+    <header
+    class="navbar navbar-expand-lg navbar-dark bg-dark d-block z-fixed z-3 p-0 header-top user-select-none"
+  >
+    <div class="container d-block py-1 py-lg-3 bg-dark">
+      <div class="navbar-stuck-hide pt-1"></div>
+      <div class="row flex-wrap align-items-center g-0">
+        <div class="col col-lg-3 d-flex align-items-center">
+          <button
+            type="button"
+            class="navbar-toggler me-2 me-lg-0"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <a href="index.html" class="navbar-brand me-0"> Cartzilla </a>
+        </div>
+        <div
+          class="col col-lg-9 d-flex align-items-center justify-content-end"
+        >
+          <!-- Search visible on screens > 991px wide (lg breakpoint) -->
+          <div
+            class="position-relative flex-fill d-none d-lg-block pe-4 pe-xl-5"
+          >
+            <i
+              class="bi bi-search position-absolute top-50 translate-middle-y d-flex fs-lg text-white ms-3"
+            ></i>
+            <input
+              type="search"
+              class="form-control form-control-lg form-icon-start border-white rounded-pill"
+              placeholder="Search the products"
+            />
+          </div>
+          <div class="d-flex align-items-center">
+            <!-- Navbar stuck nav toggler -->
+            <button
+              type="button"
+              class="navbar-toggler d-none navbar-stuck-show me-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#stuckNav"
+              aria-controls="stuckNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation in navbar stuck state"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Search toggle button visible on screens < 992px wide (lg breakpoint) -->
+            <button
+              type="button"
+              class="btn btn-icon btn-lg fs-xl btn-outline-secondary border-0 rounded-circle animate-shake d-lg-none p-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#searchBar"
+              aria-expanded="false"
+              aria-controls="searchBar"
+              aria-label="Toggle search bar"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+
+            <!-- Account button visible on screens > 768px wide (md breakpoint) -->
+            <a
+              class="btn btn-icon btn-lg fs-lg btn-outline-secondary border-0 rounded-circle animate-shake d-none d-md-inline-flex"
+              href="account-signin.html"
+            >
+              <i class="bi bi-person"></i>
+              <span class="visually-hidden">Account</span>
+            </a>
+
+            <!-- Cart button -->
+            <button
+              type="button"
+              class="btn btn-icon btn-lg btn-secondary position-relative rounded-circle ms-2 p-3"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#shoppingCart"
+              aria-controls="shoppingCart"
+              aria-label="Shopping cart"
+            >
+              <span
+                class="position-absolute top-0 ms-2 badge text-bg-success border border-3 border-dark rounded-pill px-2 py-1"
+                style="font-size: 0.7rem"
+                >3</span
+              >
+              <span
+                class="top-0 start-0 d-flex align-items-center justify-content-center w-100 h-100 rounded-circle animate-slide-end fs-lg"
+              >
+                <i class="bi bi-cart2"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-stuck-hide pb-1"></div>
+    </div>
+    <div
+      class="position-absolute top-100 z-2 w-100 bg-dark d-lg-none collapse"
+      id="searchBar"
+    >
+      <div class="container position-relative my-3">
+        <i
+          class="bi bi-search position-absolute top-50 translate-middle-y d-flex fs-lg text-white ms-3"
+        ></i>
+        <input
+          type="search"
+          class="form-control form-icon-start border-white rounded-pill"
+          placeholder="Search the products"
+          data-autofocus="collapse"
+        />
+      </div>
+    </div>
+    <div class="collapse navbar-stuck-hide" id="stuckNav">
+      <nav
+        class="offcanvas offcanvas-start"
+        id="navbarNav"
+        tabindex="-1"
+        aria-labelledby="navbarNavLabel"
+        style="width: 350px"
+      >
+        <div class="offcanvas-header py-3">
+          <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body py-3 py-lg-0">
+          <div class="container px-0 px-lg-3">
+            <div class="row">
+              <!-- Categories mega menu -->
+              <div class="col-lg-3">
+                <div class="navbar-nav">
+                  <div class="dropdown w-100">
+                    <!-- Buttton visible on screens > 991px wide (lg breakpoint) -->
+                    <div
+                      class="cursor-pointer d-none d-lg-block show"
+                      data-bs-toggle="dropdown"
+                      data-bs-trigger="hover"
+                      aria-expanded="true"
+                    >
+                      <button
+                        type="button"
+                        class="btn btn-lg btn-secondary dropdown-toggle w-100 rounded-bottom-0 justify-content-start pe-none"
+                      >
+                        <i class="bi bi-grid"></i>
+                        <span class="ms-2 me-auto">Danh mục sản phẩm</span>
+                      </button>
+                    </div>
+
+                    <!-- Buttton visible on screens < 992px wide (lg breakpoint) -->
+                    <button
+                      type="button"
+                      class="btn btn-lg btn-secondary dropdown-toggle w-100 justify-content-start d-lg-none mb-2"
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
+                    >
+                      <i class="bi bi-grid"></i>
+                      <span class="ms-2 me-auto">Danh mục sản phẩm</span>
+                    </button>
+
+                    <!-- Mega menu -->
+                    <ul
+                      class="dropdown-menu dropdown-menu-static w-100 rounded-top-0 rounded-bottom-4 py-1 p-lg-1"
+                    >
+                      <li class="d-lg-none pt-2">
+                        <a
+                          class="dropdown-item fw-medium"
+                          href="shop-categories-electronics.html"
+                        >
+                          All Categories
+                        </a>
+                      </li>
+                      <li class="dropend position-static">
+                        <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
+                          <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex" href="shop-catalog-electronics.html">
+                            <span class="text-truncate">Computers &amp; Accessories</span>
+                          </a>
+                          <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
+                            Computers &amp; Accessories
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropend position-static">
+                        <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
+                          <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex" href="shop-catalog-electronics.html">
+                            <span class="text-truncate">Computers &amp; Accessories</span>
+                          </a>
+                          <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
+                            Computers &amp; Accessories
+                          </div>
+                        </div>
+                      </li>
+                      <li class="dropend position-static">
+                        <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
+                          <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex" href="shop-catalog-electronics.html">
+                            <span class="text-truncate">Computers &amp; Accessories</span>
+                          </a>
+                          <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
+                            Computers &amp; Accessories
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navbar nav -->
+              <div class="col-lg-9 d-lg-flex pt-3 pt-lg-0 ps-lg-0">
+                <ul class="navbar-nav position-relative">
+                  <li class="nav-item dropdown me-lg-n1 me-xl-0">
+                    <a class="nav-link active" href="#">Trang chủ</a>
+                  </li>
+                  <li
+                    class="nav-item dropdown position-static me-lg-n1 me-xl-0"
+                  >
+                    <a class="nav-link" href="shop.html">Cửa hàng</a>
+                  </li>
+                  <li class="nav-item dropdown me-lg-n1 me-xl-0">
+                    <a class="nav-link" href="contact.html">Liên hệ</a>
+                  </li>
+                  <li class="nav-item dropdown me-lg-n1 me-xl-0">
+                    <a class="nav-link" href="about.html">Về chúng tôi</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offcanvas-header border-top px-0 py-3 mt-3 d-md-none">
+          <div class="nav nav-justified w-100">
+            <a class="nav-link border-end" href="account-signin.html">
+              <i class="bi bi-person"></i>
+              Đăng nhập
+            </a>
+            <a class="nav-link" href="account-wishlist.html">
+              <i class="bi bi-person-add"></i>
+              Đăng kí
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <main class="content-wrapper">
+        <nav class="container pt-3 my-3 my-md-4" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="home-electronics.html">Trang chủ</a></li>
+              <li class="breadcrumb-item"><a href="shop-catalog-electronics.html">Cửa hàng</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+            </ol>
+          </nav>
+          <h1 class="h3 container mb-0 pb-4 border-bottom">Apple iPhone 14 Plus 128GB Blue</h1>
+          <section class="container pb-5 mb-1 mb-sm-2 mb-md-3 mb-lg-4 mb-xl-5">
+            <div class="row">
+    
+              <!-- Product gallery -->
+              <div class="col-md-6">
+    
+               <img src="./assets/images/products/product-1.png" alt="">
+                 
+
+
+              </div>
+    
+    
+              <!-- Product options -->
+              <div class="col-md-6 col-xl-5 offset-xl-1 pt-4">
+                <div class="ps-md-4 ps-xl-0">
+                  <div class="position-relative" id="zoomPane">
+
+    
+    
+                    <!-- Price -->
+                    <div class="d-flex flex-wrap align-items-center mb-3">
+                      <div class="h4 mb-0 me-3">$940.00</div>
+                      <div class="d-flex align-items-center text-success fs-sm ms-auto">
+                        <i class="bi bi-check2-circle"></i> 
+                        Còn hàng
+                      </div>
+                    </div>
+    
+                    <!-- Count + Buttons -->
+                    <div class="d-flex flex-wrap flex-sm-nowrap flex-md-wrap flex-lg-nowrap gap-3 gap-lg-2 gap-xl-3 mb-4">
+                      <div class="count-input flex-shrink-0 order-sm-1">
+                        <button type="button" class="btn btn-icon btn-lg" data-decrement="" aria-label="Decrement quantity" disabled="">
+                            <i class="bi bi-dash"></i>
+                        </button>
+                        <input type="number" class="form-control form-control-lg" value="1" min="1" max="5" readonly="">
+                        <button type="button" class="btn btn-icon btn-lg" data-increment="" aria-label="Increment quantity">
+                            <i class="bi bi-plus"></i>
+                        </button>
+                      </div>
+                      
+                      <button type="button" class="btn btn-lg btn-primary w-100 animate-slide-end order-sm-2 order-md-4 order-lg-2">
+                        <i class="ci-shopping-cart fs-lg animate-target ms-n1 me-2"></i>
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-detail-description mt-3">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="product-description">
+                      <div class="box-detail-title">
+                        <h2 class="fs-3 text-decoration-underline text-uppercase">Mô tả sản phẩm</h2>
+                      </div>
+                      <div class="description-content"><div class="description-productdetail"><h4 style="margin-left:0px;"><span style="font-size:28px"><span><span><span><span><span>Tính Năng Nổi Bật</span></span></span></span></span></span><br><br> </h4><h3><em><span style="font-size:20px"><strong>Tai nghe HyperX Cloud Core</strong></span></em></h3><p><br><span style="&quot;line-height:1.5&quot;"><span style="font-size:18px">Cloud Core sở hữu thiết kế với 2 củ tai dạng đóng kích thước lớn, ôm trọn lấy vành tai, đệm tai sử dụng chất liệu giả da dày dặn, êm ái. So với các tai nghe chơi game khác, củ tai của Cloud Core có phần hơi "hiền" khi không sử dụng kiểu thiếu kế góc cạnh, hầm hố mà chỉ đơn giản là một hình oval bằng nhựa phủ nhung chống trơn trượt với điểm nhấn là một miếng nhôm phay xước in logo HyperX màu đỏ nổi bật trên nền đen. Dù vậy, thiết kế này vẫn đủ để toát lên vẻ mạnh mẽ của một tai nghe cho game thủ nhờ cách phối màu đen đỏ tương phản hợp lý và logo HyperX cách điệu tựa 2 đường kiếm giao nhau.</span></span></p><h5> </h5><p><span style="font-size:18px">Củ tai bên trái là nơi tập trung toàn bộ các kết nối. Trong khi phần giắc tai nghe được bọc dù chống cắt và không thể tháo rời, Cloud Core lại cho phép tháo rời phần mic khi không cần dùng đến và có sẵn một nắp đậy cao su để che chắn cho cổng kết nối này nhằm tránh bụi và hạn chế ẩm.</span></p><p><span style="font-size:18px">Gọng tai tiếp tục sử dụng chất liệu bằng kim loại phay xước chắc chắn và cứng cáp. Phần tiếp xúc với đỉnh đầu được làm từ mút bọc da dày dặn, giúp giảm áp lực từ gọng tai lên đầu, cũng như tránh việc tóc bị kẹp vào tai nghe. Phần bên ngoài của gọng tai là nơi được Kingston chăm chút kỹ lưỡng nhất bằng việc bọc da cùng logo HyperX được thêu dệt trang nhã. Phần viền của gọng tai, nơi tiếp nối giữa phần trong và ngoài cũng được khâu mũi vắt với chỉ đỏ dày dặn, chắc chắn, tạo vẻ sang trọng, hầm hố hơn cho chiếc tai nghe chuyên game này.</span></p><p><span style="font-size:18px">Gọng tai cho phép dễ dàng điều chỉnh độ rộng theo 5 mức khác nhau. Tuy nhiên, độ rộng tối đa của gọng tai vẫn còn hạn chế khiến cho Cloud Core trở nên hơi chật với những người có cỡ đầu lớn. Cách khắc phục là không đặt phần gọng tai ở đỉnh đầu khi nghe mà hơi xuôi xuống phía trước.</span></p><h5> </h5><h5> </h5><p style="text-align: center"><img src="//file.hstatic.net/200000637319/file/image__6__93931a46f57a423189224b97f3b752fa_grande.png"></p><h5> </h5><h5> </h5><p><span style="font-size:18px">Cảm giác khi đeo Cloud Core lên tai tương đối dễ chịu. Trọng lượng nhẹ giúp đeo lâu mà không gây đau nhức vành tai. Khả năng cách âm của chiếc tai nghe này khá tốt, giúp loại bỏ đáng kể tạp âm từ môi trường xung quanh và không để lọt âm ra ngoài. Dù vậy, nhược điểm cố hữu của đệm tai bằng da là nóng và dễ gây chảy mồ hôi tai khi sử dụng trong môi trường không thật thoáng mát là điều Cloud Core vẫn chưa thể khắc phục.</span></p><h5> </h5><p><span style="font-size:18px">Là một chiếc tai nghe hướng tới các game thủ, chính vì thế mà người viết sẽ thử nghiệm khả năng tái tạo âm thanh của Cloud Core với game trước tiên. Trong phần thử nghiệm âm thanh này, người viết kết nối HyperX Cloud Core với soundcard-onboard của mainboard MSI H97 Gaming 3 và lần lượt chơi các tựa game gồm: PES 2016, FIFA 16, Tom Clancys Ghost Recon - Future Soldier, Need For Speed Rivals, Ace Combat Assault Horizon và Middle-earth Shadow of Mordor.</span></p><h5> </h5><p><span style="font-size:18px">Ấn tượng ban đầu cho thấy, Cloud Core cho ra một chất âm khỏe khoắn, giàu bass, thể hiện được sự máu lửa, tiếng súng nổ, bom rền trong cả những tựa game hành động, bắn súng như Ghost Recon - Future Soldier, Shadow of Mordor lẫn tiếng động gầm rú, tăng tốc trong Need For Speed Rivals và Ace Combat: Assault Horizon. Các nốt trầm của Cloud Core xuống được khá sâu, rắn chắc nhưng không hề gây mệt tai và lấn át các dải âm khác.</span></p><h5> </h5><h5> </h5><h5> </h5><p> </p><p><span style="font-size:18px">Dải cao treble của Cloud Core thiên sáng nhưng không chói, âm sáng giúp phát hiện tiếng bước chân và tiếng súng nổ trong game dễ dàng hơn. Dải trung mid tái tạo âm hơi "khô" nhưng đây lại là điểm lợi khi vào những khung cảnh game như hầm mỏ, nhà kho, nhà máy…Ở các khung cảnh này, các loại âm thanh sẽ tách ra tốt hơn thay vì chính game thủ sẽ bị váng đầu bởi các âm vọng phát ra từ đây.</span></p><p><span style="font-size:18px">Âm hình của Cloud Core cũng được tái tạo tương đối tốt. Tiếng bước chân địch hiện lên rõ ràng để bạn có thể đoán được cự li gần hay xa, địch đang di chuyển theo hướng nào từ đó có được phương án tác chiến hợp lý, rất cần thiết với các tựa game FPS.</span></p><p> </p><p><span style="font-size:18px">Dù vậy, âm trường của Cloud Core lại chưa thật ấn tượng. Khung cảnh rộng lớn của các sân vận động chật kín khán giả trong PES 2016 hay FIFA 16 hiện lên có phần hơi chật hẹp, chưa lột tả hết sự hoành tráng khi có hàng chục nghìn người đang hò reo, cổ vũ. Điều tương tự cũng xảy ra ở tựa game Shadow of Mordor khi Cloud Core chưa tái tạo được hết khung cảnh thế giới mở mênh mông, bao la. Khó trách được Cloud Core bởi đây là hạn chế chung của các tai nghe dạng đóng.</span></p><h5> </h5><h5> </h5><h5> </h5><h5> </h5><p><span style="font-size:18px">Micro của Cloud Core cũng cho khả năng bắt tiếng và lọc tiếng ồn khá tốt, giúp cho việc hội thoại trong game thuận tiện, rõ ràng.</span></p><p><span style="font-size:18px">Với âm nhạc, vì là một chiếc tai nghe tối ưu cho việc chơi game nên sẽ khó lòng đòi hỏi Cloud Core phải xử lý tốt. Tuy nhiên, nếu yêu cầu về âm nhạc của bạn không quá khắt khe, HyperX Cloud Core vẫn có thể đáp ứng với khả năng tái tạo âm thanh ở mức khá.</span></p><p><span style="font-size:18px">Cụ thể khi nghe nhạc, dải bass của Cloud Core tương đối dầy dặn và chi tiết. Tiếng bass có độ sâu và tập trung. Độ chi tiết của âm bass ở mức khá. Bass của Cloud Core sẽ phù hợp nhất với các bản nhạc điện tử, nhạc dance, EDM.</span></p><p><span style="font-size:18px">Phụ kiệnđi kèm bao gồm tai nghe, giấy hướng dẫn sử dụng, dây nối dài kèm jack chia mic cho PC, mic tháo rời.</span></p><h5> </h5><h3> </h3><h3><em><span style="font-size:20px"><strong>Micro HyperX SoloCast</strong></span></em></h3><h3><span style="font-size:20px"><strong>Cắm và chạy</strong></span></h3><p><span style="font-size:18px">Nhận những bản ghi âm chất lượng với chiếc micrô tụ USB dễ dùng này. Loại cực cardioid ưu tiên các nguồn âm thanh trực tiếp ngay trước micrô.</span></p><h5> </h5><div><p style="text-align: center"><img src="//file.hstatic.net/200000637319/file/image__7__0272d93ce47846bbbf186da78b024163_grande.png"></p><p> </p></div><div> </div><h3><span style="font-size:20px"><strong>Cảm biến chạm để tắt tiếng với đèn báo trạng thái LED</strong></span></h3><p><span style="font-size:18px">Chỉ cần chạm vào đỉnh của mic để tắt tiếng và đèn báo LED đặc trưng cho bạn biết ngay lập tức mình có đang phát sóng hay không.</span></p><h3><span style="font-size:20px"><strong>Chân đế linh hoạt dễ điều chỉnh</strong></span></h3><h5><span style="font-size:18px">Chân đế dễ điều chỉnh vị trí xoay được để hỗ trợ nhiều khả năng lắp đặt khác nhau. Thậm chí bạn còn có thể lắp thiết bị ở dưới màn hình nếu không gian của bạn quá chật chội.</span></h5><h5> </h5><p><span style="font-size:20px"><strong>Ren tay cầm boom và chân đế micro</strong></span></p><p><span style="font-size:18px">Micrô đa năng lắp vừa các cấu hình ren 3/8 inch và 5/8 inch nên có thể tương thích với phần lớn các loại chân đế micro và tay cầm boom.</span></p><h5> </h5><p><span style="font-size:20px"><strong>Tương thích với nhiều thiết bị và chương trình</strong></span></p><p><span style="font-size:18px">Nhận được âm thanh tuyệt vời cho dù bạn kết nối với PC, PS4™ hay Mac®. SoloCast được Discord và TeamSpeak™ chứng nhận, và hoạt động trên các nền tảng truyền phát lớn như Streamlabs OBS, OBS Studio và XSplit.</span></p><h4 style="&quot;margin-left:0px;"> </h4><h2 style="&quot;margin-left:0px;"><span style="font-size:28px"><span><span><span><span><span>Thông Số Kỹ Thuật</span></span></span></span></span></span></h2><table border="1" cellpadding="1" cellspacing="1" class="&quot;table" style="width:300px"><tbody><tr><th><p style="text-align: left;"><span style="&quot;color:#d35400&quot;"><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Tai nghe</span></span></span></span></p></th></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Màng loa</span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Động, 53mm với nam châm đất hiếm</span></span></span></p></td></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Loại</span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Chụp đầu, Đóng kín</span></span></span></p></td></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Đáp tuyến tần số</span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">15Hz-20kHz</span></span></span></p></td></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Trở kháng</span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">60 Ω</span></span></span></p></td></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Mức áp suất âm</span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">104dBSPL/mW ở 1kHz</span></span></span></p></td></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Tổng độ biến dạng sóng hài (T.H.D)</span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">≤ 1%</span></span></span></p></td></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Trọng lượng</span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">300g</span></span></span></p></td></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Trọng lượng kèm mic</span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">309g</span></span></span></p></td></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Độ dài và loại dây cáp</span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Cáp sạc USB (0,5m)</span></span></span></p></td></tr><tr><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">Thời lượng pin<sup>2</sup></span></span></span></p></td><td><p><span style="&quot;line-height:1.5&quot;"><span style="&quot;font-size:16px&quot;"><span style="&quot;font-family:Verdana,Geneva,sans-serif&quot;">30 giờ</span></span></span></p></td></tr><tr><td><p> </p></td></tr></tbody></table></div>"</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+          <section class="container pb-4 pb-md-5 mb-2 mb-sm-0 mb-lg-2 mb-xl-4">
+            <h2 class="h3 border-bottom pb-4 mb-0">Sản phẩm liên quan</h2>
+              <!-- Product grid -->
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 pt-4">
+            <!-- Item -->
+            <div class="col">
+              <div
+                class="product-card animate-underline hover-effect-opacity bg-body rounded"
+              >
+                <div class="position-relative">
+                  <a
+                    class="d-block rounded-top overflow-hidden p-3 p-sm-4"
+                    href="shop-product-general-electronics.html"
+                  >
+                    <div class="product-card-image">
+                      <img
+                        src="./assets/images/products/product-1.png"
+                        alt="VR Glasses"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="w-100 min-w-0 px-1 pb-2 px-sm-3 pb-sm-3">
+                  <h3 class="pb-1 mb-2">
+                    <a
+                      class="d-block fs-sm fw-medium text-truncate"
+                      href="shop-product-general-electronics.html"
+                    >
+                      <span class="animate-target"
+                        >VRB01 Virtual Reality Glasses</span
+                      >
+                    </a>
+                  </h3>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="h5 lh-1 mb-0">$340.99</div>
+                    <button
+                      type="button"
+                      class="product-card-button btn btn-icon btn-secondary animate-slide-end ms-2"
+                      aria-label="Add to Cart"
+                    >
+                      <i class="bi bi-cart3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="col">
+              <div
+                class="product-card animate-underline hover-effect-opacity bg-body rounded"
+              >
+                <div class="position-relative">
+                  <a
+                    class="d-block rounded-top overflow-hidden p-3 p-sm-4"
+                    href="shop-product-general-electronics.html"
+                  >
+                    <div class="product-card-image">
+                      <img
+                        src="./assets/images/products/product-1.png"
+                        alt="VR Glasses"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="w-100 min-w-0 px-1 pb-2 px-sm-3 pb-sm-3">
+                  <h3 class="pb-1 mb-2">
+                    <a
+                      class="d-block fs-sm fw-medium text-truncate"
+                      href="shop-product-general-electronics.html"
+                    >
+                      <span class="animate-target"
+                        >VRB01 Virtual Reality Glasses</span
+                      >
+                    </a>
+                  </h3>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="h5 lh-1 mb-0">$340.99</div>
+                    <button
+                      type="button"
+                      class="product-card-button btn btn-icon btn-secondary animate-slide-end ms-2"
+                      aria-label="Add to Cart"
+                    >
+                      <i class="bi bi-cart3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="col">
+              <div
+                class="product-card animate-underline hover-effect-opacity bg-body rounded"
+              >
+                <div class="position-relative">
+                  <a
+                    class="d-block rounded-top overflow-hidden p-3 p-sm-4"
+                    href="shop-product-general-electronics.html"
+                  >
+                    <div class="product-card-image">
+                      <img
+                        src="./assets/images/products/product-1.png"
+                        alt="VR Glasses"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="w-100 min-w-0 px-1 pb-2 px-sm-3 pb-sm-3">
+                  <h3 class="pb-1 mb-2">
+                    <a
+                      class="d-block fs-sm fw-medium text-truncate"
+                      href="shop-product-general-electronics.html"
+                    >
+                      <span class="animate-target"
+                        >VRB01 Virtual Reality Glasses</span
+                      >
+                    </a>
+                  </h3>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="h5 lh-1 mb-0">$340.99</div>
+                    <button
+                      type="button"
+                      class="product-card-button btn btn-icon btn-secondary animate-slide-end ms-2"
+                      aria-label="Add to Cart"
+                    >
+                      <i class="bi bi-cart3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item -->
+            <div class="col">
+              <div
+                class="product-card animate-underline hover-effect-opacity bg-body rounded"
+              >
+                <div class="position-relative">
+                  <a
+                    class="d-block rounded-top overflow-hidden p-3 p-sm-4"
+                    href="shop-product-general-electronics.html"
+                  >
+                    <div class="product-card-image">
+                      <img
+                        src="./assets/images/products/product-1.png"
+                        alt="VR Glasses"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="w-100 min-w-0 px-1 pb-2 px-sm-3 pb-sm-3">
+                  <h3 class="pb-1 mb-2">
+                    <a
+                      class="d-block fs-sm fw-medium text-truncate"
+                      href="shop-product-general-electronics.html"
+                    >
+                      <span class="animate-target"
+                        >VRB01 Virtual Reality Glasses</span
+                      >
+                    </a>
+                  </h3>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="h5 lh-1 mb-0">$340.99</div>
+                    <button
+                      type="button"
+                      class="product-card-button btn btn-icon btn-secondary animate-slide-end ms-2"
+                      aria-label="Add to Cart"
+                    >
+                      <i class="bi bi-cart3"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+    </main>
+    <footer class="footer bg-dark text-light">
+        <div class="footer-top">
+          <div class="container pt-5 mt-1 mt-sm-3 mt-lg-4">
+            <div class="row">
+              <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+                <div class="footer-single-widget">
+                  <div class="widget-title">
+                    <div class="footer-logo">
+                      <a class="text-light" href="#"> LOGO </a>
+                    </div>
+                  </div>
+                  <div class="widget-body">Thương hiệu là ....</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+                <div class="footer-single-widget">
+                  <div class="widget-title">Thông tin</div>
+                  <div class="widget-body">
+                    <div class="footer-useful-link">
+                      <ul class="contact-list">
+                        <li class="contact-item">
+                          Địa chỉ: 180 Cao Lỗ, Phường 4, Quận 8, TP Hồ Chí Minh
+                        </li>
+                        <li class="contact-item">
+                          Email: DH52102716@student.stu.edu.vn
+                        </li>
+                        <li class="contact-item">Điện thoại: (028) 38 505 520</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6592.4985499755685!2d106.6789931371774!3d10.74041089759156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f62a90e5dbd%3A0x674d5126513db295!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2jhu4cgU8OgaSBHw7Ju!5e0!3m2!1svi!2s!4v1714125058390!5m2!1svi!2s"
+                  width="100%"
+                  height="250"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container pt-5 mt-1 mt-sm-3 mt-lg-4">
+            <div class="row">
+              <div class="col-12">
+                <hr />
+                <div class="footer-copyright text-center">@Copyright</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="back-to-top"><i class="bi bi-arrow-up"></i></div>
+      </footer>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"
+      ></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./assets/js/main.js"></script>
+</body>
+</html>

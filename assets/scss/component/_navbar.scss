@@ -1,0 +1,79 @@
+.navbar{
+    z-index: 100;
+}
+.navbar-toggler{
+    border: none;
+    display: flex;
+    align-items: center;
+    i{
+        font-size: 2rem;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+}
+.navbar-nav{
+    .dropdown-toggle{
+        display: flex;
+        align-items: center;
+    }
+    
+    .dropdown-toggle[data-bs-toggle=dropdown]::after {
+        display: block;
+        border: none;
+        content: "\f0142";
+        font-family: "Material Design Icons";
+        margin-left: auto;
+        -webkit-transition: -webkit-transform .2s;
+        transition: -webkit-transform .2s;
+        transition: transform .2s;
+        transition: transform .2s, -webkit-transform .2s;
+        font-size: 1.05rem;
+        position: absolute;
+        right: 18px;
+    }
+    .dropdown-toggle[aria-expanded=true]::after{
+        transform: rotate(90deg);
+    }
+}
+
+.nav-link{
+    color: #000;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link.active{
+    color: #000!important;
+    border-left: 1px solid #000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    animation: slideDown 0.35s ease-out;
+    z-index: 9999;
+}
+.navbar-stuck-hide.collapse {
+    display: block;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg.navbar-stuck .navbar-stuck-hide.collapse:not(.show) {
+        display: none;
+    }
+}
+
+@keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
