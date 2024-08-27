@@ -237,252 +237,285 @@
     </div>
     <!-- Navigation bar (Page header) -->
     <header
-    class="navbar navbar-expand-lg navbar-dark bg-dark d-block z-fixed z-3 p-0 header-top user-select-none"
-  >
-    <div class="container d-block py-1 py-lg-3 bg-dark">
-      <div class="navbar-stuck-hide pt-1"></div>
-      <div class="row flex-wrap align-items-center g-0">
-        <div class="col col-lg-3 d-flex align-items-center">
-          <button
-            type="button"
-            class="navbar-toggler me-2 me-lg-0"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-label="Toggle navigation"
-          >
-            <i class="bi bi-list"></i>
-          </button>
-          <a href="index.html" class="navbar-brand me-0"> Cartzilla </a>
-        </div>
-        <div
-          class="col col-lg-9 d-flex align-items-center justify-content-end"
-        >
-          <!-- Search visible on screens > 991px wide (lg breakpoint) -->
-          <div
-            class="position-relative flex-fill d-none d-lg-block pe-4 pe-xl-5"
-          >
-            <i
-              class="bi bi-search position-absolute top-50 translate-middle-y d-flex fs-lg text-white ms-3"
-            ></i>
-            <input
-              type="search"
-              class="form-control form-control-lg form-icon-start border-white rounded-pill"
-              placeholder="Search the products"
-            />
-          </div>
-          <div class="d-flex align-items-center">
-            <!-- Navbar stuck nav toggler -->
-            <button
-              type="button"
-              class="navbar-toggler d-none navbar-stuck-show me-3"
-              data-bs-toggle="collapse"
-              data-bs-target="#stuckNav"
-              aria-controls="stuckNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation in navbar stuck state"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Search toggle button visible on screens < 992px wide (lg breakpoint) -->
-            <button
-              type="button"
-              class="btn btn-icon btn-lg fs-xl btn-outline-secondary border-0 rounded-circle animate-shake d-lg-none p-3"
-              data-bs-toggle="collapse"
-              data-bs-target="#searchBar"
-              aria-expanded="false"
-              aria-controls="searchBar"
-              aria-label="Toggle search bar"
-            >
-              <i class="bi bi-search"></i>
-            </button>
-
-            <!-- Account button visible on screens > 768px wide (md breakpoint) -->
-            <a
-              class="btn btn-icon btn-lg fs-lg btn-outline-secondary border-0 rounded-circle animate-shake d-none d-md-inline-flex"
-              href="account-signin.html"
-            >
-              <i class="bi bi-person"></i>
-              <span class="visually-hidden">Account</span>
-            </a>
-
-            <!-- Cart button -->
-            <button
-              type="button"
-              class="btn btn-icon btn-lg btn-secondary position-relative rounded-circle ms-2 p-3"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#shoppingCart"
-              aria-controls="shoppingCart"
-              aria-label="Shopping cart"
-            >
-              <span
-                class="position-absolute top-0 ms-2 badge text-bg-success border border-3 border-dark rounded-pill px-2 py-1"
-                style="font-size: 0.7rem"
-                >3</span
-              >
-              <span
-                class="top-0 start-0 d-flex align-items-center justify-content-center w-100 h-100 rounded-circle animate-slide-end fs-lg"
-              >
-                <i class="bi bi-cart2"></i>
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="navbar-stuck-hide pb-1"></div>
-    </div>
-    <div
-      class="position-absolute top-100 z-2 w-100 bg-dark d-lg-none collapse"
-      id="searchBar"
+      class="navbar navbar-expand-lg navbar-dark bg-dark d-block z-fixed z-3 p-0 header-top user-select-none"
     >
-      <div class="container position-relative my-3">
-        <i
-          class="bi bi-search position-absolute top-50 translate-middle-y d-flex fs-lg text-white ms-3"
-        ></i>
-        <input
-          type="search"
-          class="form-control form-icon-start border-white rounded-pill"
-          placeholder="Search the products"
-          data-autofocus="collapse"
-        />
-      </div>
-    </div>
-    <div class="collapse navbar-stuck-hide" id="stuckNav">
-      <nav
-        class="offcanvas offcanvas-start"
-        id="navbarNav"
-        tabindex="-1"
-        aria-labelledby="navbarNavLabel"
-        style="width: 350px"
-      >
-        <div class="offcanvas-header py-3">
-          <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+      <div class="container d-block py-1 py-lg-3 bg-dark">
+        <div class="navbar-stuck-hide pt-1"></div>
+        <div class="row flex-wrap align-items-center g-0">
+          <div class="col col-lg-3 d-flex align-items-center">
+            <button
+              type="button"
+              class="navbar-toggler me-2 me-lg-0"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <a href="index.html" class="navbar-brand me-0"> Cartzilla </a>
+          </div>
+          <div
+            class="col col-lg-9 d-flex align-items-center justify-content-end"
+          >
+            <!-- Search visible on screens > 991px wide (lg breakpoint) -->
+            <div
+              class="position-relative flex-fill d-none d-lg-block pe-4 pe-xl-5"
+            >
+              <i
+                class="bi bi-search position-absolute top-50 translate-middle-y d-flex fs-lg text-white ms-3"
+              ></i>
+              <input
+                type="search"
+                class="form-control form-control-lg form-icon-start border-white rounded-pill"
+                placeholder="Search the products"
+              />
+            </div>
+            <div class="d-flex align-items-center">
+              <!-- Navbar stuck nav toggler -->
+              <button
+                type="button"
+                class="navbar-toggler d-none navbar-stuck-show me-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#stuckNav"
+                aria-controls="stuckNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation in navbar stuck state"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Search toggle button visible on screens < 992px wide (lg breakpoint) -->
+              <button
+                type="button"
+                class="btn btn-icon btn-lg fs-xl btn-outline-secondary border-0 rounded-circle animate-shake d-lg-none p-3"
+                data-bs-toggle="collapse"
+                data-bs-target="#searchBar"
+                aria-expanded="false"
+                aria-controls="searchBar"
+                aria-label="Toggle search bar"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+
+              <!-- Account button visible on screens > 768px wide (md breakpoint) -->
+              <a
+                class="btn btn-icon btn-lg fs-lg btn-outline-secondary border-0 rounded-circle animate-shake d-none d-md-inline-flex"
+                href="account-signin.html"
+              >
+                <i class="bi bi-person"></i>
+                <span class="visually-hidden">Account</span>
+              </a>
+
+              <!-- Cart button -->
+              <button
+                type="button"
+                class="btn btn-icon btn-lg btn-secondary position-relative rounded-circle ms-2 p-3"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#shoppingCart"
+                aria-controls="shoppingCart"
+                aria-label="Shopping cart"
+              >
+                <span
+                  class="position-absolute top-0 ms-2 badge text-bg-success border border-3 border-dark rounded-pill px-2 py-1"
+                  style="font-size: 0.7rem"
+                  >3</span
+                >
+                <span
+                  class="top-0 start-0 d-flex align-items-center justify-content-center w-100 h-100 rounded-circle animate-slide-end fs-lg"
+                >
+                  <i class="bi bi-cart2"></i>
+                </span>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="offcanvas-body py-3 py-lg-0">
-          <div class="container px-0 px-lg-3">
-            <div class="row">
-              <!-- Categories mega menu -->
-              <div class="col-lg-3">
-                <div class="navbar-nav">
-                  <div class="dropdown w-100">
-                    <!-- Buttton visible on screens > 991px wide (lg breakpoint) -->
-                    <div
-                      class="cursor-pointer d-none d-lg-block show"
-                      data-bs-toggle="dropdown"
-                      data-bs-trigger="hover"
-                      aria-expanded="true"
-                    >
+        <div class="navbar-stuck-hide pb-1"></div>
+      </div>
+      <div
+        class="position-absolute top-100 z-2 w-100 bg-dark d-lg-none collapse"
+        id="searchBar"
+      >
+        <div class="container position-relative my-3">
+          <i
+            class="bi bi-search position-absolute top-50 translate-middle-y d-flex fs-lg text-white ms-3"
+          ></i>
+          <input
+            type="search"
+            class="form-control form-icon-start border-white rounded-pill"
+            placeholder="Search the products"
+            data-autofocus="collapse"
+          />
+        </div>
+      </div>
+      <div class="collapse navbar-stuck-hide" id="stuckNav">
+        <nav
+          class="offcanvas offcanvas-start"
+          id="navbarNav"
+          tabindex="-1"
+          aria-labelledby="navbarNavLabel"
+          style="width: 350px"
+        >
+          <div class="offcanvas-header py-3">
+            <h5 class="offcanvas-title" id="navbarNavLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body py-3 py-lg-0">
+            <div class="container px-0 px-lg-3">
+              <div class="row">
+                <!-- Categories mega menu -->
+                <div class="col-lg-3">
+                  <div class="navbar-nav">
+                    <div class="dropdown w-100">
+                      <!-- Buttton visible on screens > 991px wide (lg breakpoint) -->
+                      <div
+                        class="cursor-pointer d-none d-lg-block show"
+                        data-bs-toggle="dropdown"
+                        data-bs-trigger="hover"
+                        aria-expanded="true"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-lg btn-secondary dropdown-toggle w-100 rounded-bottom-0 justify-content-start pe-none"
+                        >
+                          <i class="bi bi-grid"></i>
+                          <span class="ms-2 me-auto">Danh mục sản phẩm</span>
+                        </button>
+                      </div>
+
+                      <!-- Buttton visible on screens < 992px wide (lg breakpoint) -->
                       <button
                         type="button"
-                        class="btn btn-lg btn-secondary dropdown-toggle w-100 rounded-bottom-0 justify-content-start pe-none"
+                        class="btn btn-lg btn-secondary dropdown-toggle w-100 justify-content-start d-lg-none mb-2"
+                        data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside"
                       >
                         <i class="bi bi-grid"></i>
                         <span class="ms-2 me-auto">Danh mục sản phẩm</span>
                       </button>
+
+                      <!-- Mega menu -->
+                      <ul
+                        class="dropdown-menu dropdown-menu-static w-100 rounded-top-0 rounded-bottom-4 py-1 p-lg-1"
+                      >
+                        <li class="d-lg-none pt-2">
+                          <a
+                            class="dropdown-item fw-medium"
+                            href="shop-categories-electronics.html"
+                          >
+                            All Categories
+                          </a>
+                        </li>
+                        <li class="dropend position-static">
+                          <div
+                            class="position-relative rounded pt-2 pb-1 px-lg-2"
+                            data-bs-toggle="dropdown"
+                            data-bs-trigger="hover"
+                          >
+                            <a
+                              class="dropdown-item fw-medium stretched-link d-none d-lg-flex"
+                              href="shop-catalog-electronics.html"
+                            >
+                              <span class="text-truncate"
+                                >Computers &amp; Accessories</span
+                              >
+                            </a>
+                            <div
+                              class="dropdown-item fw-medium text-wrap stretched-link d-lg-none"
+                            >
+                              Computers &amp; Accessories
+                            </div>
+                          </div>
+                        </li>
+                        <li class="dropend position-static">
+                          <div
+                            class="position-relative rounded pt-2 pb-1 px-lg-2"
+                            data-bs-toggle="dropdown"
+                            data-bs-trigger="hover"
+                          >
+                            <a
+                              class="dropdown-item fw-medium stretched-link d-none d-lg-flex"
+                              href="shop-catalog-electronics.html"
+                            >
+                              <span class="text-truncate"
+                                >Computers &amp; Accessories</span
+                              >
+                            </a>
+                            <div
+                              class="dropdown-item fw-medium text-wrap stretched-link d-lg-none"
+                            >
+                              Computers &amp; Accessories
+                            </div>
+                          </div>
+                        </li>
+                        <li class="dropend position-static">
+                          <div
+                            class="position-relative rounded pt-2 pb-1 px-lg-2"
+                            data-bs-toggle="dropdown"
+                            data-bs-trigger="hover"
+                          >
+                            <a
+                              class="dropdown-item fw-medium stretched-link d-none d-lg-flex"
+                              href="shop-catalog-electronics.html"
+                            >
+                              <span class="text-truncate"
+                                >Computers &amp; Accessories</span
+                              >
+                            </a>
+                            <div
+                              class="dropdown-item fw-medium text-wrap stretched-link d-lg-none"
+                            >
+                              Computers &amp; Accessories
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-
-                    <!-- Buttton visible on screens < 992px wide (lg breakpoint) -->
-                    <button
-                      type="button"
-                      class="btn btn-lg btn-secondary dropdown-toggle w-100 justify-content-start d-lg-none mb-2"
-                      data-bs-toggle="dropdown"
-                      data-bs-auto-close="outside"
-                    >
-                      <i class="bi bi-grid"></i>
-                      <span class="ms-2 me-auto">Danh mục sản phẩm</span>
-                    </button>
-
-                    <!-- Mega menu -->
-                    <ul
-                      class="dropdown-menu dropdown-menu-static w-100 rounded-top-0 rounded-bottom-4 py-1 p-lg-1"
-                    >
-                      <li class="d-lg-none pt-2">
-                        <a
-                          class="dropdown-item fw-medium"
-                          href="shop-categories-electronics.html"
-                        >
-                          All Categories
-                        </a>
-                      </li>
-                      <li class="dropend position-static">
-                        <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
-                          <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex" href="shop-catalog-electronics.html">
-                            <span class="text-truncate">Computers &amp; Accessories</span>
-                          </a>
-                          <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
-                            Computers &amp; Accessories
-                          </div>
-                        </div>
-                      </li>
-                      <li class="dropend position-static">
-                        <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
-                          <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex" href="shop-catalog-electronics.html">
-                            <span class="text-truncate">Computers &amp; Accessories</span>
-                          </a>
-                          <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
-                            Computers &amp; Accessories
-                          </div>
-                        </div>
-                      </li>
-                      <li class="dropend position-static">
-                        <div class="position-relative rounded pt-2 pb-1 px-lg-2" data-bs-toggle="dropdown" data-bs-trigger="hover">
-                          <a class="dropdown-item fw-medium stretched-link d-none d-lg-flex" href="shop-catalog-electronics.html">
-                            <span class="text-truncate">Computers &amp; Accessories</span>
-                          </a>
-                          <div class="dropdown-item fw-medium text-wrap stretched-link d-lg-none">
-                            Computers &amp; Accessories
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
-              </div>
 
-              <!-- Navbar nav -->
-              <div class="col-lg-9 d-lg-flex pt-3 pt-lg-0 ps-lg-0">
-                <ul class="navbar-nav position-relative">
-                  <li class="nav-item dropdown me-lg-n1 me-xl-0">
-                    <a class="nav-link active" href="#">Trang chủ</a>
-                  </li>
-                  <li
-                    class="nav-item dropdown position-static me-lg-n1 me-xl-0"
-                  >
-                    <a class="nav-link" href="shop.html">Cửa hàng</a>
-                  </li>
-                  <li class="nav-item dropdown me-lg-n1 me-xl-0">
-                    <a class="nav-link" href="contact.html">Liên hệ</a>
-                  </li>
-                  <li class="nav-item dropdown me-lg-n1 me-xl-0">
-                    <a class="nav-link" href="about.html">Về chúng tôi</a>
-                  </li>
-                </ul>
+                <!-- Navbar nav -->
+                <div class="col-lg-9 d-lg-flex pt-3 pt-lg-0 ps-lg-0">
+                  <ul class="navbar-nav position-relative">
+                    <li class="nav-item dropdown me-lg-n1 me-xl-0">
+                      <a class="nav-link active" href="#">Trang chủ</a>
+                    </li>
+                    <li
+                      class="nav-item dropdown position-static me-lg-n1 me-xl-0"
+                    >
+                      <a class="nav-link" href="shop.html">Cửa hàng</a>
+                    </li>
+                    <li class="nav-item dropdown me-lg-n1 me-xl-0">
+                      <a class="nav-link" href="contact.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item dropdown me-lg-n1 me-xl-0">
+                      <a class="nav-link" href="about.html">Về chúng tôi</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="offcanvas-header border-top px-0 py-3 mt-3 d-md-none">
-          <div class="nav nav-justified w-100">
-            <a class="nav-link border-end" href="account-signin.html">
-              <i class="bi bi-person"></i>
-              Đăng nhập
-            </a>
-            <a class="nav-link" href="account-wishlist.html">
-              <i class="bi bi-person-add"></i>
-              Đăng kí
-            </a>
+          <div class="offcanvas-header border-top px-0 py-3 mt-3 d-md-none">
+            <div class="nav nav-justified w-100">
+              <a class="nav-link border-end" href="account-signin.html">
+                <i class="bi bi-person"></i>
+                Đăng nhập
+              </a>
+              <a class="nav-link" href="account-wishlist.html">
+                <i class="bi bi-person-add"></i>
+                Đăng kí
+              </a>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
-  </header>
+        </nav>
+      </div>
+    </header>
     <main class="content-wrapper">
       <nav class="container pt-3 my-3 my-md-4" aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -579,9 +612,7 @@
                       <li class="contact-item">
                         Địa chỉ: 180 Cao Lỗ, Phường 4, Quận 8, TP Hồ Chí Minh
                       </li>
-                      <li class="contact-item">
-                        Email: DH52102716@student.stu.edu.vn
-                      </li>
+                      <li class="contact-item">Email:contact@gmail.com</li>
                       <li class="contact-item">Điện thoại: (028) 38 505 520</li>
                     </ul>
                   </div>
